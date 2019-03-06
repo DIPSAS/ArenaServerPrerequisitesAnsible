@@ -1,0 +1,4 @@
+   - name: Install .NET 3.5 Feature
+     win_feature: name=NET-Framework-Features include_sub_features=true
+     tags:
+       - ArenaServerDependency

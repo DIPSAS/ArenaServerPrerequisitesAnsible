@@ -6,6 +6,7 @@
     - DotNet461
     - { role: DotNet462, when: "arenaVersion|string() == 'latest' or arenaVersion is version('17.2','==', strict=False)" }
     - { role: DotNet471, when: "arenaVersion|string() == 'latest' or arenaVersion is version('18.1','>=', strict=False)" }
+    - DotNet350
     - VCRedist2010
     - { role: VCRedist2012, when: arenaVersion|string() == "17.1" or arenaVersion|string() ==  "16.2" }
     - { role: VCRedist2013, when: "arenaVersion|string() == 'latest' or arenaVersion|version('17.2','==', strict=False)" }

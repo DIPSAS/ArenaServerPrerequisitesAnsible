@@ -18,3 +18,5 @@ solr_certificate_name: # Name of the Solr client certificate (.pfx) format.
 solr_ssl_key: # Solr client certificate password.
 solr_ssl_thumbprint: # Solr certificate thumbprint.
 ```
+
+The Solr client certificate must be added to `roles/SolrCert/files` in `.pfx` format.
