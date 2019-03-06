@@ -1,0 +1,2 @@
+chocolateyVersion: 0.10.11
+chocoTempDownloadPath: "C:\\temp\\chocolatey.{{chocolateyVersion}}.nupkg"

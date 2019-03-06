@@ -1,0 +1,22 @@
+# Connection Details
+ansible_user: ansibleadmin
+ansible_password:
+ansible_port: 5986
+ansible_connection: winrm
+ansible_winrm_server_cert_validation: ignore
+
+# Arena Version
+arenaVersion: latest
+
+# Infrastructure settings
+NuGetServer:
+UseOfflineChocoPackages: false
+OfflineChocoFeedUrl: "{{ NuGetServer }}/nuget/ExternalSoftware/"
+OfficialChocoFeedUrl: https://chocolatey.org/api/v2/
+ChocoFeedUrl: "{{ OfflineChocoFeedUrl if UseOfflineChocoPackages else OfficialChocoFeedUrl }}"
+fileRepository:
+
+# Solr Certificate
+solr_certificate_name:
+solr_ssl_key:
+solr_ssl_thumbprint:

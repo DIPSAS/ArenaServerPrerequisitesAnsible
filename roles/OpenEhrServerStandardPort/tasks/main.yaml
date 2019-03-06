@@ -1,0 +1,32 @@
+- name: Allow access to port 9000 for Arena Ehr Server
+  tags: ehrserver
+  win_firewall_rule:
+    name: ArenaEhrServer
+    enable: yes
+    state: present
+    action: allow
+    direction: in
+    protocol: TCP
+    localport: 9000
+  
+- name: Allow access to port 9100 for Ehr Flow
+  tags: ehrserver
+  win_firewall_rule:
+    name: ArenaEhrFlow
+    enable: yes
+    state: present
+    action: allow
+    direction: in
+    protocol: TCP
+    localport: 9100
+
+- name: Allow access to port 4443 for Arena Ehr Server
+  tags: ehrserver
+  win_firewall_rule:
+    name: ArenaEhrServerSSL
+    enable: yes
+    state: present
+    action: allow
+    direction: in
+    protocol: TCP
+    localport: 4443

@@ -1,0 +1,5 @@
+solr_ssl_personal_creates: "Cert:\\LOCALMACHINE\\My\\{{ solr_ssl_thumbprint }}"
+solr_ssl_trusted_people_creates: "Cert:\\LOCALMACHINE\\TrustedPeople\\{{ solr_ssl_thumbprint }}"
+solr_ssl_trusted_root_creates: "Cert:\\localmachine\\root\\{{ solr_ssl_thumbprint }}"
+
+iis_users: IIS_IUSRS

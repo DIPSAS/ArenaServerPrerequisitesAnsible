@@ -1,0 +1,57 @@
+- name: Check if "{{ oracle12c32Home }} exists
+  win_stat:
+    path: "{{ oracle12c32Home }}"
+  register: OracleClientInstalled
+
+- name: Copy Oracle 12c Driver zip
+  win_get_url: url='{{ fileRepository }}//{{ oracle12c32InstallFileName }}' dest="C:\\{{ oracle12c32InstallFileName }}" force=false
+  when: OracleClientInstalled.stat.exists==False
+  register: oracleDriverDownload
+  until: oracleDriverDownload.status_code == 200
+  retries: 3
+  delay: 10
+  tags:
+    - OracleDriver
+
+- name: Unzip Oracle 12c Driver
+  win_shell: "& $env:ChocolateyInstall\\tools\\7z.exe x -oC:\\winnt_12102_client32 C:\\{{ oracle12c32InstallFileName }} creates=C:\\winnt_12102_client32"
+  when: OracleClientInstalled.stat.exists==False
+  tags:
+    - OracleDriver
+
+- name: Copy Oracle 12c response file
+  win_template: src=client.rsp dest="C:\\winnt_12102_client32\\client32\\response\\client.rsp"
+  when: OracleClientInstalled.stat.exists==False
+  tags:
+    - OracleDriver
+
+- name: Install Oracle 12c Driver From response file
+  win_shell: Start-Process -FilePath C:\winnt_12102_client32\client32\setup.exe -ArgumentList '-silent','-waitforcompletion','-nowait' ,'-responsefile c:\winnt_12102_client32\client32\response\client.rsp' -Wait
+  args:
+    creates: "{{ oracle12c32Home }}"
+  when: OracleClientInstalled.stat.exists==False
+  tags:
+    - OracleDriver
+
+- name: Get tnsnames.ora file from file repository to Oracle 12c Driver Installation
+  win_template: src=tnsnames.ora dest="{{ oracle12c32Home }}\\network\\admin\\tnsnames.ora"
+  when: OracleClientInstalled.stat.exists==False
+  tags:
+    - tnsnames
+    - OracleDriver
+
+- name: Get sqlnet.ora file from file repository to Oracle 12c Driver Installation
+  win_copy: src=sqlnet.ora dest="{{ oracle12c32Home }}\\network\\admin\\sqlnet.ora"
+  when: OracleClientInstalled.stat.exists==False
+  tags:
+    - OracleDriver
+
+- name: Delete Oracle 12c Driver zip
+  win_file:
+    state: absent
+    path: "{{ oracle12c32InstallFileName }}"
+
+- name: Delete Oracle 12c Driver Installation media
+  win_file:
+    state: absent
+    path: "C:\\winnt_12102_client32"

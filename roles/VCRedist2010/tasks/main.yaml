@@ -1,0 +1,2 @@
+   - name: Install Microsoft Visual C++ 2010 Redistributable Package 10.0.40219.2
+     win_chocolatey: name=vcredist2010 source="{{ ChocoFeedUrl }}"

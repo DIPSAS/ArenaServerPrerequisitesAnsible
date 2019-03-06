@@ -1,0 +1,10 @@
+- name: Allow access to port 8080 for MessageBroker
+  tags: broker
+  win_firewall_rule:
+    name: DIPSMessageBroker
+    enable: yes
+    state: present
+    action: allow
+    direction: in
+    protocol: TCP
+    localport: 8080

@@ -1,0 +1,7 @@
+oracle12c32Home: "C:\\oracle\\product\\12.1.0\\client_1"
+oracle12c64Home: "C:\\oracle\\product\\12.1.0\\client_2"
+
+oracle12cHome: "{{ oracle12c32Home }}"
+
+oracle12c32InstallFileName: winnt_12102_client32.zip
+oracle12c64InstallFileName: winx64_12c_client.zip

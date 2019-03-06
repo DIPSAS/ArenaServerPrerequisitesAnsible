@@ -1,0 +1,66 @@
+- name: Check if Chocolatey is installed
+  win_stat:
+    path: C:\\ProgramData\\chocolatey
+  register: chocolateyStatus
+  tags:
+    - offline
+    - choco
+
+- name: Check Chocolatey version
+  win_shell: chocolatey -v
+  register: installedChocolateyVersion
+  when:
+    - chocolateyStatus.stat.exists == True
+  changed_when: installedChocolateyVersion.stdout_lines[0] != chocolateyVersion
+  tags:
+    - offline
+    - choco
+
+- name: Install Chocolatey "{{ chocolateyVersion }}"
+  win_shell: $env:chocolateyVersion = '{{ chocolateyVersion }}'; iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
+  register: chocoInstall
+  when:
+    - chocolateyStatus.stat.exists == False or installedChocolateyVersion.stdout_lines[0] != chocolateyVersion
+    - UseOfflineChocoPackages == False
+  tags:
+    - choco
+
+- name: Get Chocolatey from offline feed
+  win_get_url:
+    url: "{{ OfflineChocoFeedUrl }}package/chocolatey/{{ chocolateyVersion }}"
+    dest: "{{ chocoTempDownloadPath }}"
+  when:
+    - chocolateyStatus.stat.exists == False or installedChocolateyVersion.stdout_lines[0] != chocolateyVersion
+    - UseOfflineChocoPackages == True
+  tags:
+    - offline
+    - choco
+
+- name: Copy OfflineInstallChocolatey.ps1 to disk
+  win_template:
+    src: OfflineInstallChocolatey.ps1
+    dest: C:\\temp\\OfflineInstallChocolatey.ps1
+  when:
+    - chocolateyStatus.stat.exists == False or installedChocolateyVersion.stdout_lines[0] != chocolateyVersion
+    - UseOfflineChocoPackages == True
+  tags:
+    - offline
+    - choco
+
+- name: Install Chocolatey offline
+  win_shell: C:\\temp\\OfflineInstallChocolatey.ps1
+  when:
+    - chocolateyStatus.stat.exists == False or installedChocolateyVersion.stdout_lines[0] != chocolateyVersion
+    - UseOfflineChocoPackages == True
+  tags:
+    - offline
+    - choco
+
+- name: Configure Chocolatey to use cache folder
+  win_chocolatey_config:
+    name: cacheLocation
+    state: present
+    value: C:\temp\chocolatey
+  tags:
+    - offline
+    - choco

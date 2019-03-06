@@ -1,0 +1,7 @@
+### This Package is only a meta package pointing to VCRedist140. The package `aspnetcore-runtimepackagestore` used by `dotnetcore-windowshosting`
+### Depends on vcredist2015, so we keep this role for clearity.
+   - name: Install Microsoft Visual C++ Redistributable for Visual Studio 2015 Update 3
+     win_chocolatey: name=vcredist2015 source="{{ ChocoFeedUrl }}"
+     ignore_errors: yes
+     tags:
+       - ArenaServerDependency

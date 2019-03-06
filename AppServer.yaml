@@ -1,0 +1,20 @@
+ - name: Provisioning for AppServer
+   hosts: appservers
+   roles:
+    - WindowsUpdate
+    - Chocolatey
+    - DotNet461
+    - { role: DotNet462, when: "arenaVersion|string() == 'latest' or arenaVersion is version('17.2','==', strict=False)" }
+    - { role: DotNet471, when: "arenaVersion|string() == 'latest' or arenaVersion is version('18.1','>=', strict=False)" }
+    - VCRedist2010
+    - { role: VCRedist2012, when: arenaVersion|string() == "17.1" or arenaVersion|string() ==  "16.2" }
+    - { role: VCRedist2013, when: "arenaVersion|string() == 'latest' or arenaVersion|version('17.2','==', strict=False)" }
+    - { role: VCRedist140, when: "arenaVersion|string() == 'latest' or arenaVersion is version('17.2','>=', strict=False)" }
+    - IIS
+    - IIS-ARR
+    - IIS-URLRewrite
+    - { role: DotNetCoreWindowsHostingIIS, when: "arenaVersion|string() == 'latest' or arenaVersion is version('17.2','>=', strict=False)" }
+    - SolrCert
+    - OpenEhrServerStandardPort
+    - OpenMessageBrokerServerStandardPort
+    - Oracle12CDriver

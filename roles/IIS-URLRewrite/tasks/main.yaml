@@ -1,0 +1,6 @@
+# Used by ServiceCatalog and more.
+- name: Install URL ReWrite Package
+  win_chocolatey: name=urlrewrite source="{{ ChocoFeedUrl }}"
+
+- name: Install HTTP Redirection
+  win_feature: name=web-http-redirect

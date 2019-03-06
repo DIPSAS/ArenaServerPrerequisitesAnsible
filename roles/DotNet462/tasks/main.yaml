@@ -1,0 +1,13 @@
+   - name: Install DotNet Framework 4.6.2
+     win_chocolatey: name=dotnet-4.6.2 source="{{ ChocoFeedUrl }}"
+     ignore_errors: yes
+     register: dotnet462
+     tags:
+       - dotnet462
+
+
+   - name: Reboot if DotNet 4.6.2 requires it
+     win_reboot:
+     when: dotnet462.changed
+     tags:
+       - dotnet462

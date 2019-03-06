@@ -1,0 +1,12 @@
+   - name: Install IIS
+     win_feature: name=Web-Server,Web-Common-Http,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45 include_management_tools=True
+
+     # Used by DIPS.ConfigServer for Client auth.
+   - name:  Install IIS Client Cert Auth
+     win_feature: name=Web-Cert-Auth include_sub_features=true
+
+   - name:  Install WebSocket Protocol
+     win_feature: name=Web-WebSockets include_sub_features=true
+
+   - name: Install .NET 4.5 Feature
+     win_feature: name=NET-Framework-45-Features include_sub_features=true

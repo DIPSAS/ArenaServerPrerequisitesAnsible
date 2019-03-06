@@ -1,0 +1,13 @@
+   - name: Install DotNet Framework 4.7.1
+     win_chocolatey: name=dotnet4.7.1 source="{{ ChocoFeedUrl }}"
+     register: dotnet471
+     retries: 3
+     until: dotnet471 is succeeded
+     tags:
+       - dotnet471
+
+   - name: Reboot if DotNet 4.7.1 requires it
+     win_reboot:
+     when: dotnet471.changed
+     tags:
+       - dotnet471

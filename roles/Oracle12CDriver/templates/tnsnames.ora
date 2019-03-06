@@ -1,0 +1,7453 @@
+# DIPS ASA - interne databaser
+
+FULL_VT74m.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-classic-74m.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS2)
+    )
+  )
+
+INT_VT74m.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-classic-74m.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS1)
+    )
+  )
+
+MAN_VT74m.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-classic-74m.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS)
+    )
+  )
+
+DIPS_VT74m.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-classic-74m.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS)
+    )
+  )
+
+DIPS_VT740.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-classic-740.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS)
+    )
+  )
+
+WTF.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vd-tf-db01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.WORLD)
+    )
+  )
+
+GABRIEL.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.155)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS)
+    )
+  )
+
+STHF_7314.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.208)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS.world)
+    )
+  )
+
+
+int_patvisit03.world  =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VT-PATVISIT03)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS2.world)
+    )
+  )
+
+ARENA1620.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-arena1620-db.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS)
+    )
+  )
+
+ARENA1611.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-arena1611-db.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS)
+    )
+  )
+
+RACBASE.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = dbrac-scan)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = RACBASE)
+      (UR = A)
+    )
+  )
+
+
+
+## Rac ONE DATABASE
+ONEMART.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = dbrac-scan)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPSONE)
+    )
+  )
+
+## DIPS Real Application Cluster database - kopi av testmaster
+
+DIPSRAC.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = dbrac-scan)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS)
+    )
+  )
+
+##Standard local databases
+DIPS.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = {{ ansible_fqdn }})(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS)
+    )
+  )
+
+
+##DIPS-ASJ Testdatabaser for ODI, OGG og ODQ
+siv.world=
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.153)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = siv)
+    )
+  )
+
+hos.world=
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.153)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = hos)
+    )
+  )
+
+vv.world=
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.153)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = vv)
+    )
+  )
+
+jedd.world=
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.153)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = DIPS)
+    )
+  )
+
+vv1.world=
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.153)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = vv1)
+    )
+  )
+
+
+vv2.world=
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.153)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = vv2)
+    )
+  )
+
+
+
+siv1.world=
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.153)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = SIV1)
+    )
+  )
+
+
+SIV2.world=
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.153)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = SIV2)
+    )
+  )
+
+
+
+HSO.world=
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.153)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = HSO)
+    )
+  )
+
+
+MAN_REFERRAL03.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-referral03)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = DIPS)
+    )
+  )
+
+INT_REFERRAL03.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-referral03)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = DIPS2)
+    )
+  )
+
+FULL_REFERRAL03.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-referral03)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = DIPS3)
+    )
+  )
+
+
+vt-schedsuite02.world =
+ (DESCRIPTION =
+   (ADDRESS = (PROTOCOL = TCP)(HOST = vt-schedsuite02)(PORT=1521))
+   (CONNECT_DATA =
+        (SERVER=DEDICATED)
+        (SID=dips)
+    )
+  )
+
+vt-afx04-dips.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vt-afx04)(PORT=1521))
+     (CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=dips)
+      )
+  )
+
+
+vt-afx04-dips3.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vt-afx04)(PORT=1521))
+     (CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=dips3)
+      )
+  )
+
+vt-afxmain03.world =
+ (DESCRIPTION =
+   (ADDRESS = (PROTOCOL = TCP)(HOST = vt-afxmain03)(PORT=1521))
+   (CONNECT_DATA =
+        (SERVER=DEDICATED)
+        (SID=dips)
+    )
+  )
+
+vt-clinical04.world =
+ (DESCRIPTION =
+   (ADDRESS = (PROTOCOL = TCP)(HOST = vt-clinical04)(PORT=1521))
+   (CONNECT_DATA =
+        (SERVER=DEDICATED)
+        (SID=dips)
+    )
+  )
+
+vt-surgery07.world =
+ (DESCRIPTION =
+   (ADDRESS = (PROTOCOL = TCP)(HOST = vt-surgery07)(PORT=1521))
+   (CONNECT_DATA =
+        (SERVER=DEDICATED)
+        (SID=dips)
+    )
+  )
+
+vt-ehr01.world =
+ (DESCRIPTION =
+   (ADDRESS = (PROTOCOL = TCP)(HOST = vt-ehr01)(PORT=1521))
+   (CONNECT_DATA =
+        (SERVER=DEDICATED)
+        (SID=dips)
+    )
+  )
+
+vt-insight02.world =
+(DESCRIPTION =
+ (ADDRESS = (PROTOCOL = TCP)(HOST = vt-insight02)(PORT=1521))
+ (CONNECT_DATA =
+      (SERVER=DEDICATED)
+      (SID=dips)
+  )
+)
+
+vt-order01.world =
+ (DESCRIPTION =
+   (ADDRESS = (PROTOCOL = TCP)(HOST = vt-order01)(PORT=1521))
+   (CONNECT_DATA =
+        (SERVER=DEDICATED)
+        (SID=dips)
+    )
+  )
+
+vt-patinfo01.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vt-patinfo01)(PORT=1521))
+     (CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=dips)
+      )
+    )
+
+vt-psych01.world =
+ (DESCRIPTION =
+   (ADDRESS = (PROTOCOL = TCP)(HOST = vt-psych01)(PORT=1521))
+   (CONNECT_DATA =
+        (SERVER=DEDICATED)
+        (SID=dips)
+    )
+  )
+
+vt-referral02.world =
+(DESCRIPTION =
+ (ADDRESS = (PROTOCOL = TCP)(HOST = vt-referral02)(PORT=1521))
+ (CONNECT_DATA =
+      (SERVER=DEDICATED)
+      (SID=dips)
+  )
+)
+
+vt-tariff02.world =
+ (DESCRIPTION =
+   (ADDRESS = (PROTOCOL = TCP)(HOST = vt-tariff02)(PORT=1521))
+   (CONNECT_DATA =
+        (SERVER=DEDICATED)
+        (SID=dips)
+    )
+  )
+
+vt-patvisit02.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vt-patvisit02)(PORT=1521))
+     (CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=dips)
+      )
+    )
+
+BIKURS.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.134.12)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN.WORLD)
+    )
+  )
+
+
+BIDIPS.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-wlbidb01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN)
+    )
+  )
+
+
+DATAMART.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-wlbidb01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DATAMART)
+    )
+  )
+
+DMART.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-wlbidb01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DMART)
+    )
+  )
+
+
+MARTE.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-wlbidb01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MARTE)
+    )
+  )
+
+automasjon02.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vt-automasjon02)(PORT=1521))
+	   (CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=dips)
+      )
+    )
+
+vd-dbbuild05.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vd-dbbuild05)(PORT=1521))
+	   (CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=dips)
+      )
+    )
+
+
+vd-dbbuild04.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vd-dbbuild04)(PORT=1521))
+	   (CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=dips)
+      )
+    )
+
+
+vd-dbbuild03.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vd-dbbuild03)(PORT=1521))
+	   (CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=dips)
+      )
+    )
+
+vd-dbbuild02.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vd-dbbuild02)(PORT=1521))
+	   (CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=dips)
+      )
+    )
+
+vd-dbbuild01.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vd-dbbuild01)(PORT=1521))
+	   (CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=dips)
+      )
+    )
+
+
+CLONETEST.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-clonedb01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = CLONE1)
+    )
+  )
+
+
+ALBERT-UTV-YT.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-clonedb01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = CLONE1)
+    )
+  )
+
+
+VEI-CLONETEST.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-clonedb01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = CLONE3)
+    )
+  )
+
+
+MAN-UNN-153.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-clonedb01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = CLONE4)
+    )
+  )
+
+
+CLONETEST5.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-clonedb01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = CLONE5)
+    )
+  )
+
+CLONETEST6.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-clonedb01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = CLONE6)
+    )
+  )
+
+
+
+MAN-SPIKE-YT.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-testdb01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = TESTDB01)
+    )
+  )
+
+MAN-SOLR-YT.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-testdb04)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = TESTDB02)
+    )
+  )
+
+man-testlab-yt.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.134.71)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = TESTDB02)
+    )
+  )
+
+man-testlab2-yt.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-hnyt-o12-02.testlab.local)(PORT = 1521))
+  (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = HN12C02B)
+    )
+  )
+
+man-testlab2-yt2.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.134.74)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = TESTDB02)
+    )
+  )
+
+
+man-testlab3-yt.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.134.130)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = TESTDB02)
+    )
+  )
+
+man-testlab4-yt.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.134.73)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = TESTDB02)
+    )
+  )
+
+man-hnyt-o11-01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-hnyt-o11-01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = HN11G001)
+    )
+  )
+
+man-testlab5-yt.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-hnyt-o12-01.testlab.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = HN12C001)
+    )
+  )
+
+man-testlab6-yt.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-hnyt-o12-03.testlab.local)(PORT = 1521))
+  (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = HN12C003)
+    )
+  )
+
+man-testlab7-yt.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-hnyt-o12-04.testlab.local)(PORT = 1521))
+  (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = HN12C004)
+    )
+  )
+
+man-testlab8-yt.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-lab8-db01.testlab.local)(PORT = 1521))
+  (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = HN12CL08)
+    )
+  )
+
+man-aktiv-yt.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-hnyt-o12-02)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = HN12C002)
+    )
+  )
+
+
+# alternativt alias for man-testlab-yt:
+man-15-1-test.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.134.71)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = TESTDB02)
+    )
+  )
+
+MAN-TEST-YT.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-testdb02)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = TESTDB02)
+    )
+  )
+
+FULL-TEST-YT.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-testdb03)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = TESTDB03)
+    )
+  )
+
+
+UTVDB02.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vp-utvdb02)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = UTVDB02)
+    )
+  )
+
+
+
+
+
+DIPSVM.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.100.225)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS.world)
+    )
+  )
+
+
+MAN_V-NEXTYT.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.131)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = UNNYT1)
+    )
+  )
+
+
+FULL.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = FULL.world)
+    )
+  )
+
+CDB01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-ora12c01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = CDB01)
+    )
+  )
+
+
+UNN-YT.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = n4s-db3.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = UNNYT)
+    )
+  )
+
+
+SFOKONV.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-sfoconf)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS.world)
+    )
+  )
+
+
+
+DIAKON.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vd-602)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIAKON)
+    )
+  )
+
+
+
+
+12CTEST.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-ora12c01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = FULL)
+    )
+  )
+
+
+
+INT.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.world)
+    )
+  )
+
+
+
+
+INTTEST.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-sfoconf)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT)
+    )
+  )
+
+
+
+MAN.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN.world)
+    )
+  )
+
+QDB.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = QDB.world)
+    )
+  )
+
+
+QDBTEST.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-sfoconf)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = QDB)
+    )
+  )
+
+
+
+##
+##
+# DIPS ASA - felles interne databaser
+
+DIPSICCA.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 80.89.41.218)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.world)
+    )
+  )
+
+MAN_KAMFER01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.133)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+MAN_SHAUN01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.182)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN.world)
+    )
+  )
+
+MAN_SHAUN02.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.108)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN.world)
+    )
+  )
+
+
+MAN_MUSASHI01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.225)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN.world)
+    )
+  )
+
+
+MAN_DELOREAN01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.94)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN.world)
+    )
+  )
+
+INT_DELOREAN01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.94)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.world)
+    )
+  )
+
+FULL_DELOREAN01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.94)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = FULL.world)
+    )
+  )
+
+
+
+
+MAN_EGJENG01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.168)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN.world)
+    )
+  )
+
+INT_EGJENG01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.168)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.world)
+    )
+  )
+
+FULL_EGJENG01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.168)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = FULL.world)
+    )
+  )
+
+MAN_EGJENG02.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-egjeng02)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = dips)
+    )
+  )
+
+
+# ALBERT01---------------------------------------------------- #
+QDB_ALBERT01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.90)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = QDB.world)
+    )
+  )
+
+MAN_ALBERT01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.90)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN.world)
+    )
+  )
+
+INT_ALBERT01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.90)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.world)
+    )
+  )
+
+FULL_ALBERT01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.90)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = FULL.world)
+    )
+  )
+
+MAN_ALBERT02.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.119)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN.world)
+    )
+  )
+
+INT_ALBERT02.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.119)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.world)
+    )
+  )
+
+INT_ALBERT03.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-albert03)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.world)
+    )
+  )
+
+INTHV01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-inthv-db01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+# -------------------------------------------------------------
+# VT-JOKERNORD
+# ------------------------------------------------------------ #
+
+MAN_JOKERNORD.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.236)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+  QDB_JOKERNORD.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.236)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+# -------------------------------------------------------------
+# VT-JOKER01
+# ------------------------------------------------------------ #
+
+MAN-JOKER01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.165)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+# -------------------------------------------------------------
+# VT-JOKER02
+# ------------------------------------------------------------ #
+
+MAN-JOKER02.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.166)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+# -------------------------------------------------------------
+# VT-JOKER04
+# ------------------------------------------------------------ #
+
+MAN-JOKER04.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.98)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+
+# -------------------------------------------------------------
+# VT-DC-SYKEHUS (lanseringstestmilj? for Communicator og Interactor)
+# ------------------------------------------------------------ #
+
+MAN-DC-SYKEHUS.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-dc-sykehus)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+
+# ------------------------------------------------------------ #
+# VD-SPLITT01
+
+MAN_SPLITT01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.232)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_SPLITT01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.232)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+FULL_SPLITT01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.232)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+QDB_SPLITT01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.232)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+
+# --------------- Tambars baser -------------------
+
+TAMBAR-TEST-YT.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-tambar-test)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = TAMBAR)
+    )
+  )
+
+TAMBAR-UTV-YT.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-tambar-utv)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = TAMBAR)
+    )
+  )
+
+TAMBAR-UNN03-YT.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-tambar-unn03)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = TMBUNN03)
+    )
+  )
+
+QDB_AUTHLINK01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-authlink01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+
+vtTambar_FULL.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.109)(PORT=1521))
+	(CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=FULL)
+      )
+    )
+
+vtTambar_INT.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.109)(PORT=1521))
+	(CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=INT)
+      )
+    )
+
+vtTambar_MAN.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.109)(PORT=1521))
+	(CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=MAN)
+      )
+    )
+
+# vt-tambar01, Oracle 11.2.0.3
+tambar01_full.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vt-tambar01)(PORT=1521))
+	(CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=FULL)
+      )
+    )
+
+tambar01_int.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vt-tambar01)(PORT=1521))
+	(CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=INT)
+      )
+    )
+
+tambar01_man.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vt-tambar01)(PORT=1521))
+	(CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=MAN)
+      )
+    )
+
+# vt-tambar02, Oracle 11.2.0.4
+tambar02_full.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vt-tambar02)(PORT=1521))
+	(CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=FULL)
+      )
+    )
+
+tambar02_int.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vt-tambar02)(PORT=1521))
+	(CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=INT)
+      )
+    )
+
+tambar02_man.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vt-tambar02)(PORT=1521))
+	(CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=MAN)
+      )
+    )
+
+# vt-tambar03, Oracle 11.2.0.4
+# vt-tambar04, Oracle 11.2.0.4
+tambar04_full.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vt-tambar04)(PORT=1521))
+	(CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=FULL)
+      )
+    )
+
+tambar04_int.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vt-tambar04)(PORT=1521))
+	(CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=INT)
+      )
+    )
+
+tambar04_man.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vt-tambar04)(PORT=1521))
+	(CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=MAN)
+      )
+    )
+
+tambar04_QDB.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vt-tambar04)(PORT=1521))
+	(CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=QDB)
+      )
+    )
+
+# vt-tambar05, Oracle 11.2.0.4
+
+MAN_TAMBARBT.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.240)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+QDB_TAMBARBT.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.240)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_TAMBARBT.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.240)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+INT_TAMBARBT.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.240)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+# ---------------- #
+# VTTAMBAR-S1:
+vtTambarS1_FULL.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.212)(PORT=1521))
+       (CONNECT_DATA =
+          (SERVER=DECICATED)
+          (SID=FULL)
+      )
+    )
+
+vtTambarS1_INT.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.212)(PORT=1521))
+       (CONNECT_DATA =
+          (SERVER=DECICATED)
+          (SID=INT)
+      )
+    )
+
+vtTambarS1_MAN.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.212)(PORT=1521))
+       (CONNECT_DATA =
+          (SERVER=DECICATED)
+          (SID=MAN)
+      )
+    )
+
+HBH_full.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vd-hbh01)(PORT=1521))
+	(CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=FULL)
+      )
+    )
+
+HBH_int.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vd-hbh01)(PORT=1521))
+	(CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=INT)
+      )
+    )
+
+HBH_man.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vd-hbh01)(PORT=1521))
+	(CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=MAN)
+      )
+    )
+
+HBH_qdb.world =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = vd-hbh01)(PORT=1521))
+	(CONNECT_DATA =
+          (SERVER=DEDICATED)
+          (SID=QDB)
+      )
+    )
+
+# Slutt for TAMBARs seksjon i fila
+# -------------------------------- #
+
+MAN_MEDVNEXT.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.146)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+ETL_SOURCE.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-teambuktu03)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN.world)
+    )
+  )
+
+ETL_TARGET.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-teambuktu03)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.world)
+    )
+  )
+
+ETL_TARGET_INT.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-teambuktu03)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DDW.world)
+    )
+  )
+
+ETL_TARGET_BIP.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-teambuktu03)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = QDB.world)
+    )
+  )
+
+DDW_V-NEXT.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-tb03)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN.world)
+    )
+  )
+
+LOCAL.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = dips)
+      (SERVER = DEDICATED)
+    )
+  )
+
+
+# Oracle Application Express
+
+APEX.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest04)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = APEX.WORLD)
+    )
+  )
+
+# Business intelligense
+
+BITEST.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vt-bitest01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = BITEST)
+    )
+  )
+
+# Trond's semantic base
+
+TROND.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-utvdb01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = TROND)
+    )
+  )
+
+
+
+XMLTEST.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vt-xmldb01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = XMLTEST)
+    )
+  )
+
+
+DIPS602.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbkunde01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = DIPS602)
+    )
+  )
+
+DIPS71.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbkunde01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = DIPS71.world)
+    )
+  )
+
+
+BERTE.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vd-berte01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = DIPS)
+    )
+  )
+
+
+
+
+
+MAN_71LINUX.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbkunde01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = DIPS602)
+    )
+  )
+
+
+
+#UNNTST72.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vt-unndb01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = UNNTST72)
+    )
+  )
+
+
+#UNNTST73.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vt-unndb01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = UNNTST73)
+    )
+  )
+
+
+OLDUNN.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vt-unndb01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = UNNEXT)
+    )
+  )
+
+
+
+#UNNTEST70.WORLD =
+#  (DESCRIPTION =
+#    (ADDRESS_LIST =
+#      (ADDRESS = (PROTOCOL = TCP)(HOST = vt-unndb01)(PORT = 1521))
+#    )
+#    (CONNECT_DATA =
+#      (SERVICE_NAME = UNNTEST70)
+#    )
+#  )
+
+
+# Metadata backup
+
+RMAN.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.107.40)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = RMAN)
+    )
+  )
+
+
+
+YT60.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.196)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = DIPS)
+    )
+  )
+
+
+
+AHUST2.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.10)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = AHUST2)
+      (SERVER = DEDICATED)
+    )
+  )
+
+
+
+
+YT60.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.196)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = DIPS)
+      (SERVER = DEDICATED)
+    )
+  )
+
+
+TESTSYKEHUSET.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.101.91)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+     (SID = dips43)
+     (SERVER=Dedicated)
+    )
+  )
+
+VT-TESTSYKEHUSET.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.135)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+     (SID = dips)
+     (SERVER=Dedicated)
+    )
+  )
+
+EJOURNAL.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 80.89.34.58)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = EJOUR)
+      (SERVER = DEDICATED)
+    )
+  )
+
+EJTEST.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.100.67)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = EJOURNAL)
+      (SERVER = DEDICATED)
+    )
+  )
+
+#
+# T-DBKUNDE01
+#
+
+TEST01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.101.30)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = TEST01)
+    )
+  )
+
+
+HST71.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vt-hstdb01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = HST71)
+    )
+  )
+
+
+HSTDIPSX.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vt-hstdb01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = HSTDIPSX)
+    )
+  )
+
+
+
+
+#10.2.0.4
+HFODIPST.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.101.30)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = HFODIPST.world)
+    )
+  )
+
+
+# 11gR2
+HFO11G.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-hfodb01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = HFO11G)
+    )
+  )
+
+
+
+TEST02.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.101.30)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = TEST02)
+    )
+  )
+
+TEST03.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.101.30)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = TEST03)
+    )
+  )
+
+SITEST.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.101.30)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = SITEST.WORLD)
+    )
+  )
+
+UNN-NYT =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = n4s-db3.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = UNNYT)
+    )
+  )
+
+
+
+
+jed.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbkunde01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER=DEDICATED)
+      (SERVICE_NAME = UNNTEST70.world)
+    )
+  )
+
+AHUS70.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-ahusdb01.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+     (SERVER=DEDICATED)
+      (SID = AHUS70)
+    )
+  )
+
+
+
+#
+# T-DBTEST02
+#
+
+# TSTVN60.world =
+#   (DESCRIPTION =
+#     (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest02.dips.local)(PORT = 1521))
+#     (CONNECT_DATA =
+#       (SERVER = DEDICATED)
+#       (SERVICE_NAME = TSTVN60.world)
+#     )
+#   )
+
+# INTVN60.world =
+#   (DESCRIPTION =
+#     (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest02.dips.local)(PORT = 1521))
+#     (CONNECT_DATA =
+#       (SERVER = DEDICATED)
+#       (SID = INTVN60)
+#     )
+#   )
+
+# FULLVN60.world =
+#   (DESCRIPTION =
+#     (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest02.dips.local)(PORT = 1521))
+#     (CONNECT_DATA =
+#       (SERVER = DEDICATED)
+#       (SERVICE_NAME = FULLVN60.world)
+#     )
+#   )
+
+
+DIPS603.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = dips-test64)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=DIPS603)
+    )
+  )
+
+FULLVN60_10G.world =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = dips-test64)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=FULL08)
+    )
+  )
+
+
+11203.world =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = dips-test64)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME=DIPS)
+    )
+  )
+
+
+11202.world =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = dips-test64)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME=FLOAT)
+    )
+  )
+
+
+
+INTVN60_10G.world =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = dips-test64)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=INT08)
+    )
+  )
+
+
+INT11G02.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest02.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT11G02)
+    )
+  )
+
+MAN11G02.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest02.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN11G02)
+    )
+  )
+
+FULL11G02.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest02.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL11G2)
+    )
+  )
+
+# INTVN61.world =
+#   (DESCRIPTION =
+#     (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest02.dips.local)(PORT = 1521))
+#     (CONNECT_DATA =
+#       (SERVER = DEDICATED)
+#       (SID = INT11G02)
+#     )
+#   )
+#
+# TSTVN61.world =
+#   (DESCRIPTION =
+#     (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest02.dips.local)(PORT = 1521))
+#     (CONNECT_DATA =
+#       (SERVER = DEDICATED)
+#       (SID = MAN11G02)
+#     )
+#   )
+
+# FULLVN61.world =
+#   (DESCRIPTION =
+#     (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest02.dips.local)(PORT = 1521))
+#     (CONNECT_DATA =
+#       (SERVER = DEDICATED)
+#       (SID = FULL11G2)
+#     )
+#   )
+
+MAN11G03.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest02.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN11G03)
+    )
+  )
+
+FULL11G03.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest02.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL11G3)
+    )
+  )
+
+INT11G03.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest02.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT11G03)
+    )
+  )
+
+TST60PILOT.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest02.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN11G03)
+    )
+  )
+
+FULL60PILOT.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest02.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL11G3)
+    )
+  )
+
+INT60PILOT.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest02.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT11G03)
+    )
+  )
+
+
+# TSTVN70.world =
+#   (DESCRIPTION =
+#     (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest02.dips.local)(PORT = 1521))
+#     (CONNECT_DATA =
+#       (SERVER = DEDICATED)
+#       (SID = MAN11G04)
+#     )
+#   )
+
+# FULLVN70.world =
+#   (DESCRIPTION =
+#     (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest02.dips.local)(PORT = 1521))
+#     (CONNECT_DATA =
+#       (SERVER = DEDICATED)
+#       (SID = FULL11G4)
+#     )
+#   )
+
+# INTVN70.world =
+#   (DESCRIPTION =
+#     (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest02.dips.local)(PORT = 1521))
+#     (CONNECT_DATA =
+#       (SERVER = DEDICATED)
+#       (SID = INT11G04)
+#     )
+#   )
+
+
+#
+# T-DBTEST04
+#
+
+ATEAM.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest04.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = ATEAM.world)
+    )
+  )
+
+VOLTST70.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest04.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = VOLTST70.world)
+    )
+  )
+
+
+TEST202.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest04.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS202.world)
+    )
+  )
+
+
+
+#
+# P-DBRAC01
+# p-oraback01
+#
+
+EMCC.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.150)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+        (SERVICE_NAME = emrepus.oracle.com)
+    )
+  )
+
+UTVSEQOLD.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = p-oraback01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+        (SERVICE_NAME = UTVSEQ)
+    )
+  )
+
+
+
+  #Data Guard:
+
+UTVSEQDG.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-dguard01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+        (SERVICE_NAME = UTVSEQDG)
+    )
+  )
+
+
+
+UTV-SEQ.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-utvdb01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+        (SERVICE_NAME = UTVSEQ)
+    )
+  )
+
+
+UTVH8OLD.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = p-oraback01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+        (SID = utvh8)
+        (SERVER=shared)
+    )
+  )
+
+
+#Data Guard:
+
+UTVH8DG.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-dguard01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+        (SERVICE_NAME = utvh8dg)
+
+    )
+  )
+
+
+
+UTV35BOLD.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = p-oraback01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+        (SID = UTV35B)
+    )
+  )
+
+
+
+
+
+
+#Data Guard:
+
+UTV35BDG.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-dguard01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+        (SERVICE_NAME = UTV35BDG)
+    )
+  )
+
+UTV61DG.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-dguard01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+        (SERVICE_NAME = UTV61)
+    )
+  )
+
+UTV60DG.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-dguard01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+        (SERVICE_NAME = UTV60DG)
+    )
+  )
+
+UTV70DG.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-dguard01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+        (SERVICE_NAME = UTV70DG)
+    )
+  )
+
+
+UTV12DG.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-dguard01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+        (SERVICE_NAME = UTV12DG)
+    )
+  )
+
+
+
+
+
+
+UTVH9OLD.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = p-oraback01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+        (SID = UTVH9)
+        (SERVER=SHARED)
+    )
+  )
+
+
+#Data Guard:
+
+UTVH9DG.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-dguard01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+        (SERVICE_NAME = UTVH9DG)
+
+    )
+  )
+
+
+
+UTVV8OLD.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = p-oraback01)(PORT = 1521))
+     )
+    (CONNECT_DATA =
+        (SID = UTVV8)
+   )
+  )
+
+#Data Guard:
+
+UTVV8DG.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-dguard01)(PORT = 1521))
+     )
+    (CONNECT_DATA =
+        (SERVICE_NAME = UTVV8DG)
+   )
+  )
+
+
+
+UTV503OLD.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = p-oraback01)(PORT = 1521))
+     )
+    (CONNECT_DATA =
+        (SID = UTV503)
+   )
+  )
+
+#Data Guard:
+
+UTV503DG.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-dguard01)(PORT = 1521))
+     )
+    (CONNECT_DATA =
+        (SERVICE_NAME = UTV503DG)
+   )
+  )
+
+
+
+UTVVOLVOLD.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = p-oraback01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+        (SID = UTVVOLV)
+        (SERVER=SHARED)
+    )
+  )
+
+#Data Guard:
+
+UTVVOLVDG.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-dguard01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+        (SERVICE_NAME = UTVVOLVDG)
+
+    )
+  )
+
+
+
+UTVV9OLD.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = p-oraback01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+     (SID = utvv9)
+     (SERVER=dedicated)
+    )
+  )
+
+
+#Data Guard:
+
+UTVV9DG.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-dguard01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+     (SERVICE_NAME = UTVV9DG)(UR=A)
+     (SERVER=dedicated)
+    )
+  )
+
+
+
+#
+# P-DBRAC03
+# P-DBRAC04
+#
+
+
+OLDUTV60.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.38)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME=UTV60)
+   )
+ )
+
+
+
+UTV60.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = p-oraback01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME=UTV60)
+   )
+ )
+
+
+UTV70OLD.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = p-oraback01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME=UTV70)
+   )
+ )
+
+
+
+UTV61OLD.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = p-dbrac04)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=UTV612)
+   )
+ )
+
+
+
+
+
+UTV71OLD.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = p-dbrac04)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=UTV712)
+
+   )
+ )
+
+UTV71_2.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.101.14)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=UTV712)
+
+   )
+ )
+
+
+UTV72OLD.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = p-dbrac04)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=UTV722)
+
+   )
+ )
+
+UTV73.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.20)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=UTV73)
+
+   )
+ )
+
+UTV14.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-utvdb01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=UTV14)
+
+   )
+ )
+
+UTV722.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.101.14)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=UTV722)
+
+   )
+ )
+
+
+UTV71DG.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-dguard01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME=UTV71)
+
+   )
+ )
+
+
+
+UTV72DG.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-dguard01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME=UTV72)
+
+   )
+ )
+
+
+
+UTV73DG.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-dguard01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME=UTV73)
+
+   )
+ )
+
+
+
+
+
+UTV12.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = dbrac-scan)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+#      (SERVICE_NAME=DIPS)
+      (SERVICE_NAME=UTV12)
+#      (SID=UTV121)
+   )
+ )
+
+
+#
+# VT-DBTEST03
+#
+
+MAN10.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vt-dbtest03)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=MAN10)
+    )
+  )
+
+MAN09.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vt-dbtest03)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=MAN09)
+    )
+  )
+
+MAN08.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vt-dbtest03)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=MAN08)
+    )
+  )
+
+MAN04.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vt-dbtest03)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=MAN04)
+    )
+  )
+
+#
+# DIPS-TEST64
+#
+
+FULL10.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = dips-test64)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=FULL10)
+    )
+  )
+
+INT10.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = dips-test64)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=INT10)
+    )
+  )
+
+FULL09.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = dips-test64)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=FULL09)
+    )
+  )
+
+INT09.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = dips-test64)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=INT09)
+    )
+  )
+
+FULL08.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = dips-test64)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=FULL08)
+    )
+  )
+
+INT08.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = dips-test64)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=INT08)
+    )
+  )
+
+FULL5115.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = dips-test64)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=FULL06)
+    )
+  )
+
+INT5115.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = dips-test64)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=INT06)
+    )
+  )
+
+
+TEST503.WORLD =
+  (DESCRIPTION =
+    (LOAD_BALANCE?=?yes)
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = dips-test64)(PORT = 1521))
+    )
+    (CONNECT_DATA =  (SID = test503)
+    )
+  )
+
+
+
+TESTH81.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = dips-test64)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = TESTH81)
+    )
+  )
+
+API43.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = dips-test64)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = API43)
+    )
+  )
+
+
+#
+# 10.0.104.242 - VD-V-NEXT2
+#
+
+QDB_V-NEXT.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.142)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_V-NEXT2.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.142)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+FULL_V-NEXT.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.142)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+
+
+MAN_V-NEXTLIN.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.143)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#MAN_V-NEXT.WORLD =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.143)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SID = MAN)
+#    )
+#  )
+
+
+INT_V-NEXT.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.142)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+#
+# VD-FIKS  10.0.106.218
+#
+
+
+MAN_FIKS.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.218)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+FULL_FIKS.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.218)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+INT_FIKS.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.218)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+QDB_FIKS.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.218)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+
+
+
+
+
+#
+# 10.0.104.108 - VD-KT1
+#
+
+QDB_KT1.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.108)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_KT1.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.108)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_KT1.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.108)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_KT1.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.108)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+
+#
+# 10.0.104.220 - VD-71M
+#
+
+QDB_71M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.220)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_71M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.220)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_71M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.220)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_71M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.220)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+#
+# 10.0.106.165 - VD-713
+#
+
+QDB_713.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.165)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_713.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.165)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_713.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.165)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_713.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.165)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+#
+# 10.0.106.145 - VD-72M
+#
+
+QDB_72M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.145)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_72M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.145)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+INT_72M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.145)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+MAN_72MLIN.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.144)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+# 10.0.108.136 - VD-73M11G
+#
+
+QDB_73M11G.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.136)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_73M11G.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.136)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+INT_73M11G.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.136)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+#
+# VD-73M12C
+#
+
+QDB_73M12C.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VD-73M12C)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_73M12C.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VD-73M12C)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+INT_73M12C.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VD-73M12C)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+MAN_73M12C.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VD-73M12C)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+# VD-74M
+#
+
+QDB_74M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VD-74M)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_74M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VD-74M)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+INT_74M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VD-74M)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+MAN_74M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VD-74M)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+#
+# VD-740
+#
+
+QDB_740.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VD-740)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_740.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VD-740)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+INT_740.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VD-740)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+MAN_740.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VD-740)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+
+
+#
+# 10.0.106.141 - VD-73M
+#
+
+#QDB_73M.WORLD =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = VD-73M)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SID = QDB)
+#    )
+#  )
+
+#FULL_73M.WORLD =
+#  (DESCRIPTION =
+#   (ADDRESS = (PROTOCOL = TCP)(HOST = VD-73M)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SID = FULL)
+#    )
+#  )
+
+INT_73M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VD-73M)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+#MAN_73M.WORLD =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = VD-73M)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SID = MAN)
+#    )
+#  )
+
+MAN_73MLIN.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.222)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+# VD-7311
+#
+
+QDB_7311.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vd-7311.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_7311.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vd-7311.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_7311.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vd-7311.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+# 10.0.106.184 - VD-7312
+#
+
+QDB_7312.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.184)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_7312.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.184)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+INT_7312.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.184)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+MAN_7312.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.184)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+# 10.0.108.228 - VD-7313
+#
+
+QDB_7313.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.228)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_7313.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.228)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+INT_7313.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.228)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+MAN_7313.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.228)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+# 10.0.108.80 - VD-7314
+#
+
+QDB_7314.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.80)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_7314.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.80)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+INT_7314.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.80)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+MAN_7314.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.80)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+
+#
+# 10.0.108.85 - VD-7315
+#
+
+QDB_7315.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.85)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_7315.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.85)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+INT_7315.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.85)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+MAN_7315.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.85)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+# 10.0.108.90 - VD-7316
+#
+
+QDB_7316.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.90)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_7316.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.90)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+INT_7316.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.90)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+MAN_7316.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.90)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+
+#
+# 10.0.108.40 - VD-7317
+#
+
+QDB_7317.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.40)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_7317.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.40)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+INT_7317.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.40)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+MAN_7317.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.40)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+
+
+
+
+
+#
+# 10.0.108.56 - VD-7310
+#
+
+QDB_7310.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.56)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_7310.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.56)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_7310.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.56)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+# 10.0.108.45 - VD-739
+#
+
+QDB_739.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.45)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_739.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.45)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_739.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.45)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+#
+# 10.0.108.38 - VD-738
+#
+
+QDB_738.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.38)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_738.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.38)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_738.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.38)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+#
+# 10.0.106.23 - VD-737
+#
+
+QDB_737.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.23)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_737.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.23)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_737.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.23)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+# 10.0.106.91 - VD-736
+#
+
+QDB_736.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.91)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_736.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.91)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_736.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.91)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+
+#
+# 10.0.106.243 - VD-735
+#
+
+QDB_735.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.243)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_735.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.243)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_735.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.243)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+# 10.0.106.204 - VD-733
+#
+
+QDB_733.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.204)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_733.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.204)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_733.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.204)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+# 10.0.106.224 - VD-732
+#
+
+QDB_732.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.224)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_732.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.224)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_732.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.224)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+# 10.0.106.214 - VD-731
+#
+
+QDB_731.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.214)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_731.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.214)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_731.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.214)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+# 10.0.106.197 - VD-730
+#
+
+QDB_730.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.197)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_730.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.197)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+INT_730.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.197)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+MAN_730.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.197)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+# 10.0.104.165 - VD-712
+#
+
+QDB_712.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.165)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_712.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.165)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_712.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.165)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_712.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.165)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+#
+# 10.0.106.166 - VD-714
+#
+
+QDB_714.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.166)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_714.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.166)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_714.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.166)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_714.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.166)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+#
+# 10.0.106.223 - VD-715
+#
+
+QDB_715.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.223)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_715.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.223)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_715.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.223)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+
+#
+# 10.0.104.146 - VD-71Pilot
+#
+
+QDB_71Pilot.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.146)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_71Pilot.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.146)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_71Pilot.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.146)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_71Pilot.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.146)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+#
+# 10.0.104.142 - VD-710
+#
+
+QDB_710.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.142)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_710.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.142)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_710.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.142)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_710.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.142)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+#
+# 10.0.104.102 - VD-app1m
+#
+
+QDB_app1m.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.102)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_app1m.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.102)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_app1m.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.102)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_app1m.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.102)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+
+#
+# 10.0.104.242 - VD-611
+#
+
+QDB_611.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.184)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_611.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.184)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_611.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.184)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_611.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.184)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+#
+# 10.0.104.181 - VD-612
+#
+
+QDB_612.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.181)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_612.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.181)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_612.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.181)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_612.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.181)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+#
+# 10.0.104.129 - VT-SMB01
+#
+
+FULL_SMB01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.129)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_SMB01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.129)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+QDB_SMB01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.129)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+#
+# 10.0.104.169 - VD-613
+#
+
+QDB_613.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.169)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_613.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.169)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_613.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.169)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_613.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.169)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+
+
+#
+# 10.0.104.219 - VD-70M
+#
+
+MAN_70M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.219)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+FULL_70M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.219)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+INT_70M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.219)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+QDB_70M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.219)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID =QDB)
+    )
+  )
+
+#
+# 10.0.104.145 - VD-702
+#
+
+MAN_702.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.145)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+FULL_702.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.145)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+INT_702.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.145)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+QDB_702.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.145)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID =QDB)
+    )
+  )
+
+#
+# 10.0.104.145 - VD-703
+#
+
+MAN_703.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.134)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+FULL_703.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.134)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+INT_703.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.134)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+QDB_703.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.134)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID =QDB)
+    )
+  )
+
+
+
+#
+# 10.0.104.183 - VD-700
+#
+
+QDB_700.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.183)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_700.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.183)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_700.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.183)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_700.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.183)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+#
+# 10.0.104.246 - VD-601
+#
+
+QDB_601.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.248)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_601.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.248)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_601.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.248)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_601.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.248)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+
+#
+# 10.0.104.246 - VD-60M
+#
+
+QDB_60M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.246)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_60M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.246)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_60M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.246)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_60M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.246)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+
+#
+# 10.0.104.245 - VD-600
+#
+
+QDB_600.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.245)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_600.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.245)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_600.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.245)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_600.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.245)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+#
+# 10.0.104.252 - VD-602
+#
+
+QDB_602.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.252)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_602.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.252)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_602.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.252)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_602.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.252)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+#
+# 10.0.104.207 - VD-606
+#
+
+QDB_606.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.207)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_606.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.207)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_606.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.207)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_606.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.207)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+#
+# 10.0.104.226 - VD-610
+#
+
+QDB_610.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.226)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_610.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.226)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_610.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.226)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_610.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.226)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+#
+# 10.0.104.230 - VD-61M
+#
+
+QDB_61M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.230)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_61M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.230)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_61M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.230)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_61M.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.230)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+# 10.0.106.167
+#
+
+MAN_INTERNDEMO01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.167)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+     (SID = MAN)
+     (SERVER=Dedicated)
+    )
+)
+# 10.0.104.237 - VD-ORAPATCH5
+#
+
+QDB_ORAP5.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.237)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_ORAP5.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.237)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_ORAP5.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.237)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_ORAP5.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.237)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+
+
+#
+#  VD-PUBREP01
+#
+
+MAN_PUBREP01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.206)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+PUBREP_V-NEXT.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.206)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.world)
+    )
+  )
+
+PUBREP_70M.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.206)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = QDB.world)
+    )
+  )
+
+PUBREP_71M.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.206)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = FULL.world)
+    )
+  )
+
+PUBREP_72M.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.206)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+
+
+#
+# DIPS-TEST10g
+#
+
+
+#
+# DIPS-TEST2
+#
+
+
+ENG34.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = dips-test2)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = ENG34)
+      (SERVER = DEDICATED)
+    )
+  )
+
+
+#
+#  t-dbtest01
+#
+
+INT5114.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = intt514x)
+      (SERVER = DEDICATED)
+    )
+  )
+
+
+TST5114.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = test514x)
+      (SERVER = DEDICATED)
+    )
+  )
+
+
+FULL5114.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = intt5136)
+      (SERVER = DEDICATED)
+    )
+  )
+
+DMOVNEXT.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = DMOVNEXT)
+    )
+  )
+
+DEMO-V-NEXT.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = DMOVNEXT)
+    )
+  )
+
+SABTEST.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = SABTEST)
+      (SERVER = DEDICATED)
+    )
+  )
+
+API51.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = API51)
+      (SERVER = DEDICATED)
+    )
+  )
+
+HL7TEST.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = hl7test)
+
+    )
+  )
+
+LILLEDUP.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = lilledup)
+      (SERVER = DEDICATED)
+    )
+  )
+
+MAN5115.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = test08)
+    )
+  )
+
+TEST08B.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = test08b)
+    )
+  )
+
+TESTH94.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = testh94)
+
+    )
+  )
+
+TESTV92.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = t-dbtest01)(PORT = 1521))
+    )
+    (CONNECT_DATA =  (SID = testv92)
+    )
+  )
+
+
+#
+# VP-DBMASTER --DIPS-MASTER
+# VP-DBMASTER01
+#
+
+MASTER.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-dbmaster01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = MASTER)
+      (SERVER = DEDICATED)
+    )
+  )
+
+# Erstattet av Nydemo 240910 ASJ
+#DEMOMASTER.WORLD =
+#  (DESCRIPTION =
+#    (ADDRESS_LIST =
+#      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-dbmaster01)(PORT = 1521))
+#    )
+#    (CONNECT_DATA =
+#      (SID = demo)
+#      (SERVER = DEDICATED)
+#    )
+#  )
+
+DEMOMASTER.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-dbmaster01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = nydemo)
+      (SERVER = DEDICATED)
+    )
+  )
+
+TESTMASTER.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-dbmaster01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = TMASTER)
+      (SERVER = DEDICATED)
+    )
+  )
+
+
+SRILANKA1.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-dbmaster01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = DIPS)
+      (SERVER = DEDICATED)
+    )
+  )
+
+SRILANKA2.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-dbmaster01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = DIPS2)
+      (SERVER = DEDICATED)
+    )
+  )
+
+
+#
+# REDRAC1
+# REDRAC2
+#
+
+
+
+
+
+#
+# RX2660_1
+# RX2660_2
+#
+
+
+
+#
+# DIPS-64
+#
+
+
+
+STRESSMED.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = redhat1)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = stressmed)
+      (SERVER = DEDICATED)
+    )
+  )
+
+
+#
+# DIPS-PARTNER
+#
+
+
+PARTNER43.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 80.89.34.51)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = dips43)
+    )
+  )
+
+PARTNER50.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 80.89.34.51)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = dips50)
+    )
+  )
+
+PARTNER51.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 80.89.34.51)(PORT = 1521))
+    (CONNECT_DATA = (SID = dips51))
+   )
+
+PARTNER70.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 80.89.41.218)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+PARTNER71.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 80.89.41.219)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = FULL.world)
+    )
+  )
+
+PARTNER72.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 80.89.41.222)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = FULL.world)
+    )
+  )
+
+MAN_KUNDE01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 80.89.41.217)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+     (SID = MAN)
+     (SERVER=Dedicated)
+    )
+)
+
+
+MAN_DEMO01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 80.89.41.218)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+     (SID = MAN)
+     (SERVER=Dedicated)
+    )
+)
+
+
+MAN_DEMO02.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 80.89.41.219)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+     (SID = MAN)
+     (SERVER=Dedicated)
+    )
+
+)
+
+MAN_DHOS.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 80.89.41.222)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+     (SID = MAN)
+     (SERVER=Dedicated)
+    )
+)
+
+DDW_HOSPITALET.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 80.89.41.222)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.world)
+    )
+  )
+
+MAN_evicare.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 77.110.228.226)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN)
+    )
+  )
+
+ETLDIPS.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = classicetl.dips.no)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = DIPS)
+    )
+  )
+
+ETL2DIPS.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.234.51)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = DIPS)
+    )
+  )
+MAN_VOLVAT.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.217)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+
+MAN_HUSKESTUE01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vt-huskestue01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = MAN)
+      (SERVER = DEDICATED)
+    )
+  )
+
+MAN_HUSKESTUE02.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vt-huskestue02)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = MAN)
+      (SERVER = DEDICATED)
+    )
+  )
+
+MAN_ACCVIO.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.104.131)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+MAN_DEU.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.106.56)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+MAN_INTIM01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.196)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+
+N4S.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = n4s-db1)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+
+#Utviklingsbaser
+
+UTV60.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-utvdb01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME=UTV60)
+   )
+ )
+
+
+
+
+UTV70.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-utvdb01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME=UTV70)
+   )
+ )
+
+
+UTV35B.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-utvdb01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+        (SID = UTV35B)
+    )
+  )
+
+
+
+UTVH9.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-utvdb01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+        (SID = UTVH9)
+        (SERVER=SHARED)
+    )
+  )
+
+
+UTV503.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-utvdb01)(PORT = 1521))
+     )
+    (CONNECT_DATA =
+        (SID = UTV503)
+   )
+  )
+
+UTVSEQ.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-utvdb01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+        (SERVICE_NAME = UTVSEQ)
+    )
+  )
+
+
+UTVV8.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-utvdb01)(PORT = 1521))
+     )
+    (CONNECT_DATA =
+        (SID = UTVV8)
+   )
+  )
+
+
+UTVV9.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-utvdb01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+     (SID = utvv9)
+     (SERVER=dedicated)
+    )
+  )
+
+
+UTVVOLV.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-utvdb01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+        (SID = UTVVOLV)
+        (SERVER=SHARED)
+    )
+  )
+
+
+
+UTVH8.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-utvdb01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+        (SID = utvh8)
+        (SERVER=shared)
+    )
+  )
+
+
+UTV72.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-utvdb01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=UTV72)
+
+   )
+ )
+
+
+UTV71.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-utvdb01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=UTV71)
+
+   )
+ )
+
+
+
+UTV61.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-utvdb01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID=UTV61)
+   )
+ )
+
+
+
+XTROND.WORLD =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vp-utvdb01)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = TROND)
+    )
+  )
+
+IRQ0_MAN.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN.world)
+    )
+  )
+IRQ0_INT.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.world)
+    )
+  )
+IRQ0_FULL.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = FULL.world)
+    )
+  )
+IRQ0_QDB.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = QDB.world)
+    )
+  )
+IRQ0_DIPS.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS.world)
+    )
+  )
+
+KAMFER_MAN.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-KAMFER01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN.world)
+    )
+  )
+KAMFER_INT.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-KAMFER01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.world)
+    )
+  )
+KAMFER_FULL.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-KAMFER01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = FULL.world)
+    )
+  )
+KAMFER_QDB.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-KAMFER01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = QDB.world)
+    )
+  )
+KAMFER_DIPS.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-KAMFER01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS.world)
+    )
+  )
+
+# VD-TJA01
+
+MAN_TJA01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.233)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+MAN_OUS01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.225)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+BI_OUS.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-wlbidb01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+
+INT_OUS01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.225)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+MAN_OUS02.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.75)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+MAN_HEALTHANG01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-healthang01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS.world)
+    )
+  )
+
+MAN_HEALTHANG02.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.67)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = DIPS)
+    )
+  )
+
+MAN_HEALTHANG03.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.67)(PORT = 1521))
+    (CONNECT_DATA =
+     (SERVER = DEDICATED)
+      (SID = DIPS2)
+    )
+  )
+
+INT_HEALTHANG01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.239)(PORT = 1521))
+    (CONNECT_DATA =
+     (SERVER = DEDICATED)
+      (SID = DIPS1)
+    )
+  )
+
+INT_HEALTHANG02.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.67)(PORT = 1521))
+    (CONNECT_DATA =
+     (SERVER = DEDICATED)
+      (SID = DIPS3)
+    )
+  )
+
+HELSIT2013STAND73.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 85.252.61.210)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = dips)
+    )
+  )
+
+#
+# 10.0.106.70 - VD-FRAMEWRK01
+#
+
+QDB_FRAMEWRK01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.70)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+INT_FRAMEWRK01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.70)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+FULL_FRAMEWRK01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.70)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_FRAMEWRK01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.70)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+# 10.0.106.87 - VD-CLINICAL01
+#
+
+QDB_CLINICAL01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.87)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+INT_CLINICAL01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.87)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+FULL_CLINICAL01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.87)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_CLINICAL01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.87)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+#
+#  10.0.108.65 - VD-CLINICAL02
+#
+
+QDB_CLINICAL02.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.65)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+INT_CLINICAL02.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.65)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+FULL_CLINICAL02.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.65)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_CLINICAL02.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.65)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+#  10.0.106.185 - VD-CLINICAL03
+#
+
+QDB_CLINICAL03.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.106.185)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+INT_CLINICAL03.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.106.185)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+FULL_CLINICAL03.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.106.185)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_CLINICAL03.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.106.185)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+
+#
+# 10.0.106.84 - VD-CLINICALSUIT
+#
+
+QDB_CLINICAL_OUS.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.84)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+INT_CLINICAL_OUS.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.84)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+FULL_CLINICAL_OUS.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.84)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_CLINICAL_OUS.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.84)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+# 10.0.106.83 - VD-SCHEDULINGSU
+#
+
+QDB_SCHEDULINGSUITE.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.83)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+INT_SCHEDULINGSUITE.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.83)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+FULL_SCHEDULINGSUITE.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.83)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_SCHEDULINGSUITE.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.83)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+VT-SCHEDSUITE02.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.195)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = DIPS)
+    )
+  )
+
+
+#
+# 10.0.106.88 - VT-JOKERNORD01
+#
+
+MAN_JOKERNORD01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.88)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+# 10.0.106.155 - VT-JOKERNORD02
+#
+
+MAN_JOKERNORD02.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.155)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+QDB_CARECLAIM.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.250)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_CARECLAIM.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.250)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = FULL.world)
+    )
+  )
+
+MAN_CARECLAIM.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.250)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_CARECLAIM.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.250)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.world)
+    )
+  )
+
+MAN_VEDTAK01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.99)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+INT_VEDTAK01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.99)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.world)
+    )
+  )
+
+QDB_VEDTAK01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.99)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+FULL_VEDTAK01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.99)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = FULL.world)
+    )
+  )
+
+IRQ02_MAN.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq02)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN.world)
+    )
+  )
+IRQ02_INT.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq02)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.world)
+    )
+  )
+IRQ02_FULL.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq02)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = FULL.world)
+    )
+  )
+IRQ02_QDB.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq02)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = QDB.world)
+    )
+  )
+IRQ02_DIPS.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq02)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS.world)
+    )
+  )
+
+MAN_TIGER02.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.117)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN.world)
+    )
+  )
+
+MAN_TIGER01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.57)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN.world)
+    )
+  )
+
+INT_TIGER01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.57)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.world)
+    )
+  )
+MAN_ARKETYPE01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.58)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+DEMOPAPPA.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.59)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN.world)
+    )
+  )
+
+DEMOPMART.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.59)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = datamart.world)
+    )
+  )
+
+DEMO1DB.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.224.51)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = dips.world)
+    )
+  )
+
+
+#
+# vt-prod-ous - database for intern produksjons-testmilj? OUS
+#
+
+OUS-LANSERT-MAN.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-prod-ous)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+#  10.0.106.47 - VD-SURGERY01
+#
+
+QDB_SURGERY01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.106.47)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+INT_SURGERY01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.106.47)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+FULL_SURGERY01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.106.47)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_SURGERY01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.106.47)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+#  10.0.106.29 - VT-SURGERY01
+#
+
+MAN_SURGERY02.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.106.29)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+#
+#  10.0.108.49 - VT-SURGERY02
+#
+
+MAN_SURGERY03.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.49)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+# 10.0.108.241 - VD-SURGERY05
+#
+
+QDB_SURGERY05.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.241)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+INT_SURGERY05.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.241)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+FULL_SURGERY05.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.241)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_SURGERY05.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.241)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#
+# 10.0.108.48 - VD-SURGERY06
+#
+
+QDB_SURGERY06.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.48)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+INT_SURGERY06.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.48)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+FULL_SURGERY06.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.48)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_SURGERY06.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.48)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+
+#
+#  10.0.106.48 - VD-SHEDSUITE13
+#
+
+QDB_SSUITE13.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.106.48)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+INT_SSUITE13.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.106.48)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+FULL_SSUITE13.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.106.48)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_SSUITE13.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.106.48)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+ATEAM02.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VT-ATEAM02)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = ATEAM.WORLD)
+    )
+  )
+
+MAN_SPIRIT01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.252)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+MAN_REFERRAL01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.25)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_REFERRAL01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.25)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+QDB_REFERRAL01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.25)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+# AFXMAIN01
+
+MAN_AFXMAIN01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.77)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_AFXMAIN01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.77)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+FULL_AFXMAIN01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.77)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+QDB_AFXMAIN01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.77)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+# AFXMAIN02 (10.0.108.82)
+
+MAN_AFXMAIN02.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.82)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_AFXMAIN02.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.82)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+FULL_AFXMAIN02.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.82)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+QDB_AFXMAIN02.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.82)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+#
+#  10.0.106.186 - VD-AFX03
+#
+
+QDB_AFX03.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.106.186)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+INT_AFX03.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.106.186)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+FULL_AFX03.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.106.186)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_AFX03.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.106.186)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+
+
+###
+
+MAN_MEDARENA01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.88)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+MAN_MEDARENA02.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.69)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+MAN_MEDARENA03.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.64)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS)
+    )
+  )
+
+MAN_HUBRO01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.91)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+MAN_MAINTEST01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.90)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+QDB_MAINTEST01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.90)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+INT_MAINTEST01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.90)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+FULL_MAINTEST01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.90)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+#
+#  10.0.108.46 - VD-REFERRALFWD1
+#
+
+INT_REFERRALFWDAFX30.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.46)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+FULL_REFERRALFWDAFX30.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.46)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_REFERRALFWDAFX30.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.46)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#  END (VD-REFERRALFWD1)
+
+#
+#  10.0.108.47 - VD-REFERRALFWD2
+#
+
+INT_REFERRALFWD.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.47)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = DIPS2)
+    )
+  )
+
+FULL_REFERRALFWD.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.47)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = DIPS3)
+    )
+  )
+
+MAN_REFERRALFWD.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.47)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = DIPS1)
+    )
+  )
+
+INT_VOIDMASTER.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vd-referralfwd2.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = DIPS2)
+    )
+  )
+
+FULL_VOIDMASTER.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vd-referralfwd2.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = DIPS3)
+    )
+  )
+
+MAN_VOIDMASTER.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vd-referralfwd2.dips.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = DIPS1)
+    )
+  )
+
+
+#  END (VD-REFERRALFWD2)
+
+#
+#  10.0.108.213 - VD-AKTIV1
+#
+
+MAN_AKTIV.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.213)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS.world)
+    )
+  )
+
+INT_AKTIV.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.213)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS1.world)
+    )
+  )
+
+FULL_AKTIV.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.213)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS2.world)
+    )
+  )
+
+#  END (VD-AKTIV1)
+
+#
+#  10.0.108.212 - VD-INTERHOSREF1
+#
+
+MAN_INTERHOSREF.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.212)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS.world)
+    )
+  )
+
+INT_INTERHOSREF.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.212)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS1.world)
+    )
+  )
+
+FULL_INTERHOSREF.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.212)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS2.world)
+    )
+  )
+
+STATIC_INTERHOSREF.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.212)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS3.world)
+    )
+  )
+
+#  END (VD-INTERHOSREF1)
+
+#
+#  10.0.108.238 - VD-INTERHOSREF2
+#
+
+INT_INTERHOSREF2.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.238)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = DIPS2)
+    )
+  )
+
+FULL_INTERHOSREF2.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.238)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = DIPS3)
+    )
+  )
+
+MAN_INTERHOSREF2.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.238)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = DIPS1)
+    )
+  )
+
+INT_VOIDTEST.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.238)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = DIPS2)
+    )
+  )
+
+FULL_VOIDTEST.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.238)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = DIPS3)
+    )
+  )
+
+MAN_VOIDTEST.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.238)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = DIPS1)
+    )
+  )
+
+
+#  END (VD-INTERHOSREF2)
+
+
+#
+#  10.0.108.48 - VT-AV01
+#
+
+INT_VT-AV01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.48)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+FULL_VT-AV01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.48)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_VT-AV01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.48)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#  END (VT-AV01)
+MAN_SELECTA01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.106.247)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = DIPS)
+    )
+  )
+
+#
+#  10.0.108.92 - VD-TESTORA12C
+#
+
+INT_TESTORA12C.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.92)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+FULL_TESTORA12C.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.92)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+MAN_TESTORA12C.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.92)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+QDB_TESTORA12C.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST =  10.0.108.92)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+#  END (VD-TESTORA12C)
+
+IRQ03_MAN.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq03)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN.world)
+    )
+  )
+IRQ03_INT.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq03)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.world)
+    )
+  )
+IRQ03_FULL.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq03)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = FULL.world)
+    )
+  )
+IRQ03_QDB.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq03)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = QDB.world)
+    )
+  )
+IRQ03_DIPS.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq03)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS.world)
+    )
+  )
+# IRQ04
+
+IRQ04_MAN.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-IRQ04)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN.world)
+    )
+  )
+IRQ04_INT.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-IRQ04)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.world)
+    )
+  )
+IRQ04_FULL.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-IRQ04)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = FULL.world)
+    )
+  )
+IRQ04_QDB.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-IRQ04)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = QDB.world)
+    )
+  )
+IRQ04_DIPS.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-IRQ04)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS.world)
+    )
+  )
+
+
+# Tariff databases
+
+FULL_TARIFF01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vd-tariff01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = FULL.world)
+    )
+  )
+
+INT_TARIFF01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vd-tariff01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.world)
+    )
+  )
+
+MAN_TARIFF01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vd-tariff01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN.world)
+    )
+  )
+
+# Public Reporting Datamart databases
+
+INT_TB04.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.216)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.world)
+    )
+  )
+
+FULL_TB04.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.216)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = FULL.world)
+    )
+  )
+
+MAN-TESTLAB2.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-lab-db01.testlab.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+#alternativt alias for man-testlab2:
+MAN-15-2-test.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-lab-db01.testlab.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+MAN_REKTORN01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.79)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+REKTORN02.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-rektorn02)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS.world)
+    )
+  )
+
+REKTORN02TARGET.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VT-REKTORN02)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DATAMART.WORLD)
+    )
+  )
+
+
+FULL_AFXMAIN02.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vd-afxmain02)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = FULL.world)
+    )
+  )
+
+INT_AFXMAIN02.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vd-afxmain02)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = INT.world)
+    )
+  )
+
+MAN_AFXMAIN02.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vd-afxmain02)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = MAN.world)
+    )
+  )
+
+DIPS_AFXMAIN02.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vd-afxmain02)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS.world)
+    )
+  )
+
+DIPS_DBTEST2012.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vd-dbtest2012)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS.world)
+    )
+  )
+
+MAN_RX.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.69)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+target_testlab1.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.134.67)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = target)
+    )
+  )
+
+
+#vt-ar-t-f-main
+ETL_SOURCE_TEST_MAIN.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VT-AR-T-F-MAIN)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = SOURCE)
+    )
+  )
+
+BIP_TEST_REPO.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VT-LAB2-BIP01.testlab.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = orcl)
+    )
+  )
+
+MART_TESTLAB2.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.134.12)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = datamart)
+    )
+	)
+
+
+INT_IDMCONNECTOR.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.124)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+	)
+
+MAN_IDMCONNECTOR.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.124)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+	)
+
+
+FULL_IDMCONNECTOR.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.124)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+	)
+
+
+QDB_IDMCONNECTOR.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.124)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+	)
+
+MAN_HUBRODB01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VT-HUBRODB01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+INT_HUBRODB01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VT-HUBRODB01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+TARGETLAB2.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-lab2-mart01.testlab.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = targetl2.world)
+    )
+  )
+
+TARGETLAB3.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.134.133)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = targetl3.world)
+    )
+  )
+
+
+TARGETLAB4.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.134.12)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = targetl4.world)
+    )
+  )
+
+TARGETLAB5.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.134.167)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = TARGETL5)
+    )
+  )
+
+TARGETLAB6.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-lab6-mart01.testlab.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = TARGETL6)
+    )
+  )
+
+TARGETLAB7.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-lab7-mart01.testlab.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = TARGETL7)
+    )
+  )
+
+TARGETLAB8.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-lab8-mart01.testlab.local)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = TARGETL8)
+    )
+  )
+
+INT_PATVISIT01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VD-PATVISIT01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = INT)
+    )
+  )
+
+MAN_PATVISIT01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VD-PATVISIT01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = MAN)
+    )
+  )
+
+FULL_PATVISIT01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VD-PATVISIT01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = FULL)
+    )
+  )
+
+QDB_PATVISIT01.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VD-PATVISIT01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = QDB)
+    )
+  )
+
+#vt-Schedulingsuite02
+man_schedulingsuite02.world =
+ (DESCRIPTION =
+   (ADDRESS = (PROTOCOL = TCP)(HOST = vt-schedsuite02)(PORT=1521))
+   (CONNECT_DATA =
+        (SERVER=DEDICATED)
+        (SID=dips)
+    )
+  )
+
+int_schedulingsuite02.world =
+ (DESCRIPTION =
+   (ADDRESS = (PROTOCOL = TCP)(HOST = vt-schedsuite02)(PORT=1521))
+   (CONNECT_DATA =
+        (SERVER=DEDICATED)
+        (SID=dips1)
+    )
+  )
+
+full_schedulingsuite02.world =
+ (DESCRIPTION =
+   (ADDRESS = (PROTOCOL = TCP)(HOST = vt-schedsuite02)(PORT=1521))
+   (CONNECT_DATA =
+        (SERVER=DEDICATED)
+        (SID=dips2)
+    )
+  )
+
+MB_FULL.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq0-db09)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS1)
+    )
+  )
+
+MB_FULL_20x.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq0-db08)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS)
+    )
+  )
+
+MB_FULL_21x.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq0-db08)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS1)
+    )
+  )
+
+FHIR_MAN.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq0-db02)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS)
+    )
+  )
+
+FHIR_INT.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq0-db02)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS1)
+    )
+  )
+
+FHIR_FULL.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq0-db02)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS2)
+    )
+  )
+
+SB_MAN.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq0-db01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS)
+    )
+  )
+
+SB_INT.WORLD =
+
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq0-db01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS1)
+    )
+  )
+
+SB_FULL.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq0-db01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS2)
+    )
+  )
+
+MB_MAN.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq0-db09)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS)
+    )
+  )
+
+MB_INT.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-irq0-db09)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS2)
+    )
+  )
+
+QADIPS.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-wlbidb01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = QADIPS)
+    )
+  )
+
+QADIPS2.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-wlbidb01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = QADIPS2)
+    )
+  )
+
+
+QADIPS3.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-wlbidb01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = QADIPS3)
+    )
+  )
+
+
+QADIPS4.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-wlbidb01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = QADIPS4)
+    )
+  )
+
+
+
+
+QAMART.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-wlbidb01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = QAMART)
+    )
+  )
+
+MAN_TRDDEMO.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.135)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS.world)
+    )
+  )
+
+INT_DESKTOP01.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.182)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS.world)
+    )
+  )
+
+INT_DESKTOP02.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.108.182)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = DIPS2.world)
+    )
+  )
+
+TEST1MART.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-wlbidb01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = TEST1MART)
+    )
+  )
+
+TEST2MART.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-wlbidb01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = TEST2MART)
+    )
+  )
+
+#VT-AR-T-F-YKSI
+ETL_SOURCE_TEST_YKSI.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VT-AR-T-F-YKSI)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = SOURCE)
+    )
+  )
+
+ETL_TARGET_TEST_YKSI.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = VT-AR-T-F-YKSI)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = TARGET)
+    )
+  )
+
+# Konsulent (RIO) - Testbase (Datamart) for WebLogic og BI Publisher 12c
+BIP12CMA.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = vt-wlbidb01)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = BIP12CMA)
+    )
+  )
+
+  # Utvkling Team Buktu BIP - Repository BIP12
+REPOS.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.0.106.67)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = REPOS)
+    )
+  )

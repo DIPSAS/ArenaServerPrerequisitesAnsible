@@ -1,0 +1,32 @@
+   - name: Copy DIPS solr-ssl certificate to machine
+     win_copy:
+       src: "{{ solr_certificate_name }}"
+       dest: "C:\\{{ solr_certificate_name }}"
+     register: solrcert
+     tags: solrssl
+
+   - name: Copy InstallCertWithPermissions.ps1 to C:\\temp
+     win_copy:
+       src: InstallCertWithPermissions.ps1
+       dest: C:\\temp\\InstallCertWithPermissions.ps1
+     tags: solrssl
+
+   - name: Add DIPS solr-ssl certificate to Personal Certificate Store
+     win_shell: ".\\InstallCertWithPermissions.ps1 C:\\{{ solr_certificate_name }} $(ConvertTo-SecureString -AsPlainText -Force -String {{ solr_ssl_key }}) My {{ iis_users }}"
+     args:
+       chdir: "C:\\temp\\"
+       creates: "{{ solr_ssl_personal_creates }}"
+     tags: solrssl
+
+   - name: Add DIPS solr-ssl certificate to Trusted People Certificate Store
+     win_shell: "Import-PfxCertificate -filepath C:\\{{ solr_certificate_name }} -certStorelocation cert:\\localmachine\\TrustedPeople -password $(ConvertTo-SecureString -AsPlainText -Force -String '{{ solr_ssl_key }}') -Exportable"
+     args:
+       creates: "{{ solr_ssl_trusted_people_creates }}"
+     tags: solrssl
+
+   - name: Add DIPS solr-ssl certificate to Trusted Root Certificate Store
+     win_shell: ".\\InstallCertWithPermissions.ps1 C:\\{{ solr_certificate_name }} $(ConvertTo-SecureString -AsPlainText -Force -String {{ solr_ssl_key }}) Root {{ iis_users }}"
+     args:
+       chdir: "C:\\temp\\"
+       creates: "{{ solr_ssl_trusted_root_creates }}"
+     tags: solrssl

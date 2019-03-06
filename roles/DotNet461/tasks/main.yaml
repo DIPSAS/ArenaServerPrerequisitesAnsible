@@ -1,0 +1,9 @@
+   - name: Install DotNet Framework 4.6.1
+     win_chocolatey: name=dotnet4.6.1 source="{{ ChocoFeedUrl }}"
+     register: dotnet461
+     retries: 3
+     until: dotnet461 is succeeded
+
+   - name: Reboot if DotNet 4.6.1 requires it
+     win_reboot:
+     when: dotnet461.changed

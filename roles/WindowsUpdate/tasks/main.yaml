@@ -1,0 +1,11 @@
+- name: Running Windows Update
+  win_updates:
+  register: update_result
+  ignore_errors: yes
+  tags: winupdate
+
+- name: Rebooting if needed by update
+  win_reboot:
+  when: update_result.reboot_required
+  ignore_errors: yes
+  tags: winupdate

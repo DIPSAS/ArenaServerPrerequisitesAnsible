@@ -1,0 +1,8 @@
+## Used by Reporting Server
+- name: Install Application Request Routing
+  win_chocolatey: name=iis-arr source="{{ ChocoFeedUrl }}"
+
+- name: Enable ARR Proxy
+  win_shell: Set-WebConfigurationProperty -pspath 'MACHINE/WEBROOT/APPHOST'  -filter "system.webServer/proxy" -name "enabled" -value "True"
+  register: arrproxy
+  changed_when: arrproxy.stdout != ""
