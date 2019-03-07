@@ -20,3 +20,5 @@ solr_ssl_thumbprint: # Solr certificate thumbprint.
 ```
 
 The Solr client certificate must be added to `roles/SolrCert/files` in `.pfx` format.
+
+The `Oracle12CDriver` role expects the file `winnt_12102_client32.zip` to be present at a HTTP fileshare, hence the `fileRepository` variable.
