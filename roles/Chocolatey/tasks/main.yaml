@@ -1,3 +1,9 @@
+- name: Create temp folder if not existing
+  win_file: path=C:\\temp state=directory
+  tags:
+    - choco
+    - offline
+
 - name: Check if Chocolatey is installed
   win_stat:
     path: C:\\ProgramData\\chocolatey
